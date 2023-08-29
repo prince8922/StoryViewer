@@ -11,7 +11,7 @@ arr.forEach(function(elem,idx){
 storiya.innerHTML=clutter; 
 
 storiya.addEventListener("click",function(dets){
-    var value=arr[dets.target.id].story
+    var value=arr[dets.target.id].story;
     document.querySelector("#full-screen").style.display="block";
     document.querySelector("#full-screen").style.backgroundImage=`url(${value})`
 
