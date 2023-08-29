@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+   padding: 0;
+   font-family:Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(10, 205, 215);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#page{
+    margin-top: 100px;
+    height:450px;
+    width:340px;
+    border-radius:15px;
+    overflow: hidden;
+    background-color: aliceblue;
+    border: 2px solid #000;
+    position: relative;
+}
+.storiya{
+    height:120px;
+    width:100%;
+    border-bottom: 2px solid #555;
+    padding: 10px;
+    white-space: nowrap; /*make one line not to go second line*/
+    overflow-x: auto;  /*make behind the page in one line*/
+    overflow-y:hidden;
+}
+.storiya::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    border: 2px solid red;
+    height:100px;
+    width:100px;
+    display: inline-block;  /*for all story in one line*/
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 5px;
+}
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#full-screen{
+    height:100%;
+    width:100%;
+    position: absolute;
+    display: none;
+    background-size:cover;
+    background-position: center;
+}
